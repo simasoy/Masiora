@@ -4,22 +4,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Studio Masiora — Interior Design</title>
-  <meta name="description" content="Studio Masiora is an interior design studio creating calm, considered homes and spaces — from full renovations to single-room styling.">
+  <meta name="description" content="Studio Masiora is an interior design studio creating rustic, tranquil and organic spaces — from full renovations to single-room styling.">
   <meta property="og:title" content="Studio Masiora — Interior Design">
-  <meta property="og:description" content="Calm, considered interiors for homes and spaces.">
+  <meta property="og:description" content="Rustic, tranquil, organic interiors.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://masiora.studio/">
+  <meta name="theme-color" content="#f0eee9">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Pinyon+Script&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <header class="site-header" id="top">
     <a class="logo" href="#top" aria-label="Studio Masiora home">
-      <span class="logo-mark">M</span>
-      <span class="logo-text">Studio Masiora</span>
+      <span class="logo-script">Masiora</span>
+      <span class="logo-text">Studio</span>
     </a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
       <span class="sr-only">Menu</span>
@@ -36,30 +38,66 @@
 
   <main>
 
-    <!-- Hero -->
+    <!-- Hero: mountains over a mint sea -->
     <section class="hero">
+      <svg class="landscape" viewBox="0 0 1440 800" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#f0eee9"/>
+            <stop offset=".45" stop-color="#ecdcd6"/>
+            <stop offset=".75" stop-color="#d9b9b6"/>
+            <stop offset="1" stop-color="#c8d9d6"/>
+          </linearGradient>
+          <linearGradient id="far" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#cdb7b5"/><stop offset="1" stop-color="#d8cfcb"/>
+          </linearGradient>
+          <linearGradient id="mid" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#b3888a"/><stop offset="1" stop-color="#b9b3ad"/>
+          </linearGradient>
+          <linearGradient id="near" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#7d5a5f"/><stop offset=".6" stop-color="#6b6262"/><stop offset="1" stop-color="#8a8f8c"/>
+          </linearGradient>
+          <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#bfe0da"/><stop offset="1" stop-color="#8fc3bb"/>
+          </linearGradient>
+        </defs>
+        <rect width="1440" height="800" fill="url(#sky)"/>
+        <circle class="moon" cx="1180" cy="150" r="26"/>
+        <path class="m-far" d="M-20 700 L-20 491 L-8 496 L4 497 L16 488 L28 486 L40 483 L52 483 L64 484 L76 473 L88 465 L100 470 L112 466 L124 467 L136 456 L148 455 L160 456 L172 449 L184 456 L196 462 L208 455 L220 452 L232 458 L244 467 L256 465 L268 461 L280 462 L292 456 L304 456 L316 458 L328 460 L340 457 L352 454 L364 452 L376 454 L388 451 L400 446 L412 453 L424 452 L436 451 L448 444 L460 449 L472 449 L484 438 L496 433 L508 434 L520 432 L532 441 L544 438 L556 442 L568 442 L580 437 L592 437 L604 441 L616 442 L628 437 L640 434 L652 424 L664 420 L676 424 L688 420 L700 412 L712 412 L724 412 L736 409 L748 402 L760 396 L772 391 L784 390 L796 383 L808 374 L820 367 L832 352 L844 341 L856 339 L868 339 L880 329 L892 317 L904 309 L916 320 L928 336 L940 346 L952 350 L964 359 L976 357 L988 361 L1000 371 L1012 373 L1024 374 L1036 372 L1048 376 L1060 385 L1072 377 L1084 384 L1096 389 L1108 392 L1120 392 L1132 393 L1144 389 L1156 387 L1168 383 L1180 376 L1192 382 L1204 380 L1216 372 L1228 371 L1240 368 L1252 363 L1264 357 L1276 354 L1288 349 L1300 342 L1312 349 L1324 350 L1336 357 L1348 363 L1360 376 L1372 390 L1384 400 L1396 409 L1408 417 L1420 417 L1432 428 L1444 435 L1456 434 L1460 700 Z"/>
+        <path class="m-mid" d="M-20 700 L-20 576 L-8 579 L4 562 L16 552 L28 561 L40 563 L52 561 L64 553 L76 553 L88 555 L100 557 L112 550 L124 551 L136 552 L148 558 L160 567 L172 571 L184 565 L196 559 L208 552 L220 544 L232 538 L244 543 L256 543 L268 543 L280 553 L292 550 L304 548 L316 540 L328 530 L340 530 L352 525 L364 528 L376 539 L388 536 L400 523 L412 529 L424 531 L436 535 L448 542 L460 544 L472 548 L484 542 L496 553 L508 559 L520 545 L532 549 L544 549 L556 543 L568 539 L580 535 L592 540 L604 532 L616 533 L628 522 L640 524 L652 523 L664 511 L676 504 L688 505 L700 498 L712 487 L724 472 L736 462 L748 460 L760 444 L772 464 L784 465 L796 483 L808 482 L820 496 L832 500 L844 499 L856 499 L868 502 L880 503 L892 498 L904 493 L916 496 L928 505 L940 503 L952 489 L964 496 L976 495 L988 497 L1000 481 L1012 480 L1024 461 L1036 458 L1048 445 L1060 432 L1072 434 L1084 415 L1096 409 L1108 407 L1120 390 L1132 375 L1144 375 L1156 362 L1168 355 L1180 333 L1192 344 L1204 351 L1216 369 L1228 372 L1240 396 L1252 394 L1264 412 L1276 412 L1288 421 L1300 441 L1312 443 L1324 449 L1336 466 L1348 473 L1360 474 L1372 497 L1384 497 L1396 498 L1408 508 L1420 522 L1432 536 L1444 534 L1456 540 L1460 700 Z"/>
+        <path class="m-near" d="M-20 700 L-20 633 L-11 637 L-2 635 L7 640 L16 644 L25 630 L34 621 L43 639 L52 633 L61 629 L70 648 L79 643 L88 651 L97 646 L106 647 L115 634 L124 640 L133 651 L142 646 L151 650 L160 650 L169 634 L178 644 L187 645 L196 637 L205 625 L214 642 L223 640 L232 646 L241 654 L250 654 L259 659 L268 648 L277 653 L286 645 L295 655 L304 659 L313 639 L322 629 L331 626 L340 645 L349 641 L358 644 L367 637 L376 638 L385 636 L394 634 L403 639 L412 642 L421 652 L430 652 L439 659 L448 658 L457 660 L466 649 L475 627 L484 631 L493 634 L502 631 L511 617 L520 611 L529 590 L538 593 L547 584 L556 567 L565 548 L574 557 L583 561 L592 535 L601 537 L610 523 L619 504 L628 494 L637 497 L646 498 L655 469 L664 461 L673 433 L682 428 L691 406 L700 401 L709 411 L718 404 L727 412 L736 397 L745 381 L754 386 L763 371 L772 365 L781 367 L790 371 L799 358 L808 345 L817 359 L826 348 L835 357 L844 357 L853 338 L862 327 L871 319 L880 313 L889 305 L898 295 L907 286 L916 285 L925 267 L934 250 L943 242 L952 218 L961 199 L970 195 L979 170 L988 176 L997 172 L1006 185 L1015 200 L1024 197 L1033 215 L1042 229 L1051 223 L1060 239 L1069 246 L1078 258 L1087 258 L1096 269 L1105 278 L1114 265 L1123 260 L1132 276 L1141 293 L1150 284 L1159 285 L1168 290 L1177 285 L1186 283 L1195 281 L1204 280 L1213 286 L1222 280 L1231 277 L1240 285 L1249 264 L1258 262 L1267 281 L1276 289 L1285 296 L1294 321 L1303 322 L1312 323 L1321 330 L1330 342 L1339 334 L1348 336 L1357 338 L1366 353 L1375 351 L1384 361 L1393 347 L1402 344 L1411 350 L1420 360 L1429 352 L1438 340 L1447 348 L1456 376 L1460 700 Z"/>
+        <rect y="604" width="1440" height="200" fill="url(#sea)"/>
+        <g class="wave w1"><path d="M0 612 Q 60 607 120 612 T 240 612 T 360 612 T 480 612 T 600 612 T 720 612 T 840 612 T 960 612 T 1080 612 T 1200 612 T 1320 612 T 1440 612 T 1560 612 T 1680 612 T 1800 612 T 1920 612 T 2040 612 T 2160 612 T 2280 612 T 2400 612 T 2520 612 T 2640 612 T 2760 612 T 2880 612 L2880 820 L0 820 Z"/></g>
+        <g class="wave w2"><path d="M0 628 Q 72 621 144 628 T 288 628 T 432 628 T 576 628 T 720 628 T 864 628 T 1008 628 T 1152 628 T 1296 628 T 1440 628 T 1584 628 T 1728 628 T 1872 628 T 2016 628 T 2160 628 T 2304 628 T 2448 628 T 2592 628 T 2736 628 T 2880 628 L2880 820 L0 820 Z"/></g>
+        <g class="wave w3"><path d="M0 646 Q 90 637 180 646 T 360 646 T 540 646 T 720 646 T 900 646 T 1080 646 T 1260 646 T 1440 646 T 1620 646 T 1800 646 T 1980 646 T 2160 646 T 2340 646 T 2520 646 T 2700 646 T 2880 646 L2880 820 L0 820 Z"/></g>
+        <g class="wave w4"><path d="M0 668 Q 120 657 240 668 T 480 668 T 720 668 T 960 668 T 1200 668 T 1440 668 T 1680 668 T 1920 668 T 2160 668 T 2400 668 T 2640 668 T 2880 668 L2880 820 L0 820 Z"/></g>
+        <g class="wave w5"><path d="M0 694 Q 180 681 360 694 T 720 694 T 1080 694 T 1440 694 T 1800 694 T 2160 694 T 2520 694 T 2880 694 L2880 820 L0 820 Z"/></g>
+        <g class="wave w6"><path d="M0 724 Q 90 710 180 724 T 360 724 T 540 724 T 720 724 T 900 724 T 1080 724 T 1260 724 T 1440 724 T 1620 724 T 1800 724 T 1980 724 T 2160 724 T 2340 724 T 2520 724 T 2700 724 T 2880 724 L2880 820 L0 820 Z"/></g>
+        <g class="wave w7"><path d="M0 756 Q 120 741 240 756 T 480 756 T 720 756 T 960 756 T 1200 756 T 1440 756 T 1680 756 T 1920 756 T 2160 756 T 2400 756 T 2640 756 T 2880 756 L2880 820 L0 820 Z"/></g>
+        <g class="wave w8"><path d="M0 786 Q 72 770 144 786 T 288 786 T 432 786 T 576 786 T 720 786 T 864 786 T 1008 786 T 1152 786 T 1296 786 T 1440 786 T 1584 786 T 1728 786 T 1872 786 T 2016 786 T 2160 786 T 2304 786 T 2448 786 T 2592 786 T 2736 786 T 2880 786 L2880 820 L0 820 Z"/></g>
+      </svg>
       <div class="hero-text">
         <p class="eyebrow">Interior Design Studio</p>
-        <h1>Spaces that feel<br><em>quietly</em> like you.</h1>
-        <p class="lede">Studio Masiora designs calm, considered interiors — homes and spaces shaped by natural materials, honest light and the way you actually live.</p>
+        <h1>Rustic, tranquil<br>spaces with <em>soul.</em></h1>
+        <p class="lede">Studio Masiora designs earthy, organic interiors inspired by mountain stone, sea air and soft evening light — homes that feel grounded, fresh and entirely yours.</p>
         <div class="hero-actions">
           <a href="#contact" class="btn btn-primary">Book a consultation</a>
           <a href="#work" class="btn btn-link">View our work →</a>
         </div>
       </div>
-      <figure class="hero-image ph ph-a" data-label="Hero image — living room">
-        <!-- Replace with: <img src="assets/hero.jpg" alt="..."> -->
-      </figure>
     </section>
 
     <!-- Studio / About -->
     <section class="section studio" id="studio">
       <div class="section-label">01 — The Studio</div>
       <div class="studio-grid">
-        <h2>Design rooted in material, light and the rhythm of daily life.</h2>
+        <div>
+          <h2>Drawn from nature: weathered timber, still water, mountain stone.</h2>
+          <p class="words">Rustic · Dramatic · Earthy · Tranquil · Fresh · Organic</p>
+        </div>
         <div class="studio-copy">
-          <p>We believe a well-designed space should feel effortless. Our work balances warmth and restraint: textured plaster, oiled timber, linen and stone, layered with pieces that carry meaning.</p>
-          <p>Every project begins with listening. We take the time to understand how you move through your home, what you love, and what you need — then we design spaces that support it, beautifully and for the long term.</p>
+          <p>We believe a home should feel like stepping outside on a clear morning: calm, fresh and quietly dramatic. Our work layers raw wood, limewash, linen and stone with soft mineral colours taken from the landscape.</p>
+          <p>Every project begins with listening. We take the time to understand how you move through your home, what you love and what you need, then design spaces that support it, beautifully and for the long term.</p>
           <ul class="values">
             <li><span>Natural materials</span>chosen to age gracefully</li>
             <li><span>Timeless over trend</span>rooms that stay right for years</li>
@@ -69,6 +107,11 @@
       </div>
     </section>
 
+    <!-- Palette strip, from the concept board -->
+    <div class="palette" aria-hidden="true">
+      <span style="--c:#f0eee9"></span><span style="--c:#d7c8b7"></span><span style="--c:#a99b8c"></span><span style="--c:#bfe0da"></span><span style="--c:#b2b9bd"></span><span style="--c:#a87374"></span><span style="--c:#7a3e48"></span><span style="--c:#332e2f"></span>
+    </div>
+
     <!-- Services -->
     <section class="section services" id="services">
       <div class="section-label">02 — Services</div>
@@ -77,7 +120,7 @@
         <article class="card">
           <span class="card-num">i.</span>
           <h3>Full Interior Design</h3>
-          <p>End-to-end design for renovations and new builds — spatial planning, joinery, lighting, finishes, furniture and project oversight through to installation.</p>
+          <p>End-to-end design for renovations and new builds: spatial planning, joinery, lighting, finishes, furniture and project oversight through to installation.</p>
         </article>
         <article class="card">
           <span class="card-num">ii.</span>
@@ -87,7 +130,7 @@
         <article class="card">
           <span class="card-num">iii.</span>
           <h3>Design Consultation</h3>
-          <p>A two-hour session in your space for direction on layout, colour, materials and lighting — ideal if you want expert guidance and to take it from there.</p>
+          <p>A two-hour session in your space for direction on layout, colour, materials and lighting. Ideal if you want expert guidance and to take it from there.</p>
         </article>
         <article class="card">
           <span class="card-num">iv.</span>
@@ -99,26 +142,28 @@
 
     <!-- Work / Portfolio -->
     <section class="section work" id="work">
+      <svg class="wave-edge top" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60 L0 30 Q 180 0 360 30 T 720 30 T 1080 30 T 1440 30 L1440 60 Z"/></svg>
       <div class="section-label">03 — Selected Work</div>
       <h2 class="section-title">Recent projects</h2>
       <div class="gallery">
         <figure class="project tall">
           <div class="ph ph-b" data-label="Project photo"></div>
-          <figcaption><strong>Linen House</strong><span>Residential · Full renovation</span></figcaption>
+          <figcaption><strong>Driftwood House</strong><span>Residential · Full renovation</span></figcaption>
         </figure>
         <figure class="project">
           <div class="ph ph-c" data-label="Project photo"></div>
-          <figcaption><strong>Olive Kitchen</strong><span>Residential · Kitchen &amp; dining</span></figcaption>
+          <figcaption><strong>Sea Glass Kitchen</strong><span>Residential · Kitchen &amp; dining</span></figcaption>
         </figure>
         <figure class="project">
           <div class="ph ph-d" data-label="Project photo"></div>
-          <figcaption><strong>Atelier Loft</strong><span>Residential · Styling</span></figcaption>
+          <figcaption><strong>Moonrise Suite</strong><span>Residential · Styling</span></figcaption>
         </figure>
         <figure class="project wide">
           <div class="ph ph-e" data-label="Project photo"></div>
-          <figcaption><strong>Terra Café</strong><span>Hospitality · Concept &amp; interiors</span></figcaption>
+          <figcaption><strong>Summit Lodge</strong><span>Hospitality · Concept &amp; interiors</span></figcaption>
         </figure>
       </div>
+      <svg class="wave-edge bottom" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 L0 30 Q 180 60 360 30 T 720 30 T 1080 30 T 1440 30 L1440 0 Z"/></svg>
     </section>
 
     <!-- Process -->
@@ -128,11 +173,11 @@
       <ol class="steps">
         <li>
           <h3>Discover</h3>
-          <p>We meet in your space, talk through how you live, your budget and timeline, and gather the inspiration that matters to you.</p>
+          <p>We meet in your space and talk through how you live, your budget and timeline, and the inspiration that matters to you.</p>
         </li>
         <li>
           <h3>Concept</h3>
-          <p>We present a design direction — layouts, mood, material palette and key pieces — and refine it together until it feels right.</p>
+          <p>We present a design direction (layouts, mood, material palette and key pieces) and refine it together until it feels right.</p>
         </li>
         <li>
           <h3>Develop</h3>
@@ -145,12 +190,17 @@
       </ol>
     </section>
 
-    <!-- Quote band -->
+    <!-- Quote band: the sea -->
     <section class="band">
       <blockquote>
         “A home should feel like an exhale.”
-        <cite>— Studio Masiora</cite>
+        <cite>Studio Masiora</cite>
       </blockquote>
+      <svg class="band-sea" viewBox="0 0 1440 140" preserveAspectRatio="none" aria-hidden="true">
+        <g class="wave w1"><path d="M0 40 Q 90 25 180 40 T 360 40 T 540 40 T 720 40 T 900 40 T 1080 40 T 1260 40 T 1440 40 T 1620 40 T 1800 40 T 1980 40 T 2160 40 T 2340 40 T 2520 40 T 2700 40 T 2880 40 L2880 140 L0 140 Z"/></g>
+        <g class="wave w3"><path d="M0 70 Q 120 50 240 70 T 480 70 T 720 70 T 960 70 T 1200 70 T 1440 70 T 1680 70 T 1920 70 T 2160 70 T 2400 70 T 2640 70 T 2880 70 L2880 140 L0 140 Z"/></g>
+        <g class="wave w5"><path d="M0 100 Q 180 75 360 100 T 720 100 T 1080 100 T 1440 100 T 1800 100 T 2160 100 T 2520 100 T 2880 100 L2880 140 L0 140 Z"/></g>
+      </svg>
     </section>
 
     <!-- Contact -->
@@ -194,8 +244,12 @@
   </main>
 
   <footer class="site-footer">
-    <div class="footer-logo">Studio Masiora</div>
-    <p>Interior Design</p>
+    <svg class="footer-peaks" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 120 L0 90 L120 70 L210 82 L330 40 L420 66 L520 52 L640 88 L760 60 L860 20 L930 48 L1010 36 L1120 74 L1230 56 L1340 80 L1440 64 L1440 120 Z"/>
+    </svg>
+    <div class="footer-logo">Masiora</div>
+    <p>Studio · Interior Design</p>
+    <p><a href="mailto:hello@masiora.studio">hello@masiora.studio</a></p>
     <p class="small">© <span id="year"></span> Studio Masiora. All rights reserved.</p>
   </footer>
 
