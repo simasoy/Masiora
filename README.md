@@ -2,20 +2,22 @@
 
 A one-page static website for Studio Masiora, an interior design studio, live at **masiora.studio**. It's plain HTML, CSS and JavaScript, with no build step and no dependencies.
 
-The look comes from the *Sima Soy* concept board: rustic, dramatic, earthy, tranquil, fresh and organic. The hero is an illustrated landscape of rocky mountains above a mint sea with slowly drifting waves (inline SVG, no images needed).
+The look comes from the *Sima Soy* concept board: rustic, dramatic, earthy, tranquil, fresh and organic. Full-bleed photography (Rocky Mountains, misty peaks, sea) with quiet typography and transparent hairline buttons.
 
-| Colour | Hex | Used for |
+**Fonts:** *Cormorant Garamond* (logo in semi-bold, headings in light), *DM Sans* (body).
+**Colours** (top of `styles.css`): shell `#f3f1ec`, linen `#ebe5dc`, beige `#d7c8b7`, taupe `#a99b8c`, mint `#c9e2dd`, mist `#b2b9bd`, dusty rose `#a87374`, deep sea-green `#3d5c58` (logo), charcoal `#332e2f`.
+
+## Photos
+
+| Spot | Currently | File to add |
 |---|---|---|
-| Shell | `#f0eee9` | page background |
-| Beige | `#d7c8b7` | lines, panels |
-| Taupe | `#a99b8c` | borders |
-| Mint sea | `#bfe0da` / `#8fc3bb` | waves, accents |
-| Mist blue | `#b2b9bd` | soft accents |
-| Dusty rose | `#a87374` | labels, mountains |
-| Burgundy | `#7a3e48` | logo, buttons, highlights |
-| Charcoal | `#332e2f` | text, footer |
+| Hero | Moraine Lake, Canadian Rockies, by Kalen Emsley ([Unsplash](https://unsplash.com/photos/snow-covered-mountain-near-lake-during-daytime-LdCpEcMQgQI)) | `assets/hero.jpg` |
+| Quote band | Misty peaks at sunrise, by Julien Riedel ([Unsplash](https://unsplash.com/photos/misty-mountain-peaks-at-sunrise-with-warm-light-sizw4cX8Sds)) | `assets/band.jpg` |
+| Contact | Ocean waves with white foam, by Sueda Dilli ([Unsplash](https://unsplash.com/photos/turbulent-ocean-waves-crashing-with-white-foam-njXk57H1-2E)) | `assets/sea.jpg` |
+| Studio | linen-tone placeholder | `assets/studio.jpg` |
+| Projects | linen-tone placeholder | `assets/project-1.jpg` … `project-4.jpg` |
 
-Fonts: *Pinyon Script* (logo), *Cormorant Garamond* (headings), *DM Sans* (body). All colours live at the top of `styles.css`.
+The three landscape photos currently load from Unsplash's servers (free under the Unsplash License). For speed and reliability, download them (about 2400px wide, JPG, under 500 KB), save them in `assets/` and change each `src` to the local file. The studio and project slots pick up `assets/studio.jpg` and `assets/project-N.jpg` automatically once those files exist.
 
 ```
 index.html        page content
@@ -28,11 +30,7 @@ assets/           favicon and (later) your photos
 
 ## Before launch: to-do
 
-1. **Photos.** Every image slot is a soft-coloured placeholder (`class="ph"`). Put your photos in `assets/` and add an `<img>` inside each slot. The placeholder label hides automatically:
-   ```html
-   <div class="ph ph-b"><img src="assets/linen-house.jpg" alt="Living room with linen sofa"></div>
-   ```
-   Export them at about 2000px on the long edge, as JPG/WebP under ~400 KB each.
+1. **Photos.** Add your interior photos (see *Photos* above) and self-host the landscape photos.
 2. **Projects.** The names in "Recent projects" (Driftwood House, Sea Glass Kitchen, etc.) are placeholders. Replace them with real projects.
 3. **Email and Instagram.** The site uses `hello@masiora.studio` (set this up as a mailbox, e.g. via Google Workspace from Squarespace) and `@studiomasiora`. Search `index.html` to change either.
 4. **Contact form.** The form currently opens the visitor's email app (`mailto:`), which is unreliable. To receive enquiries properly, sign up for a free form service such as [Formspree](https://formspree.io) (Cloudflare Pages has no built-in forms), then change the form's `action` to the URL they give you and remove `enctype="text/plain"`.

@@ -17,15 +17,28 @@ nav.querySelectorAll('a').forEach((link) =>
   })
 );
 
-// Header border once the page scrolls
+// Solid header once past the top of the hero; gentle parallax on the band photo
 const header = document.querySelector('.site-header');
-const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 10);
+const band = document.querySelector('.band');
+const bandImg = band && band.querySelector('img');
+const still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+const onScroll = () => {
+  header.classList.toggle('scrolled', window.scrollY > 40);
+  if (bandImg && !still) {
+    const r = band.getBoundingClientRect();
+    const progress = Math.min(1, Math.max(0, (r.top + r.height) / (window.innerHeight + r.height))); // 1 → 0 as it passes
+    bandImg.style.transform = `translateY(${(progress - 1) * 12}%)`;
+  }
+};
 window.addEventListener('scroll', onScroll, { passive: true });
 onScroll();
 
-// Fade sections in as they enter the viewport
+// Fade content in as it enters the viewport
 if ('IntersectionObserver' in window) {
-  const targets = document.querySelectorAll('.section > *, .band blockquote');
+  const targets = document.querySelectorAll(
+    '.statement > *, .split > *, .section-head, .service-list li, .project, .steps li, .contact-inner > *'
+  );
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
