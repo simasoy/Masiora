@@ -16,7 +16,7 @@ The look comes from the *Sima Soy* concept board: rustic, dramatic, earthy, tran
 | Quote band | Waves on a purple beach, by Yousef Espanioly ([Unsplash](https://unsplash.com/photos/waves-crashing-on-purple-beach-DA_tplYgTow)) | `assets/band.jpg` |
 | Contact | Golden hour rocky coastline, by Kellen Riggin ([Unsplash](https://unsplash.com/photos/golden-hour-illuminates-rocky-coastline-with-crashing-waves-9jTkTV7E51I)) | `assets/sea.jpg` |
 | Studio | Layered rock strata, from the owner's mood board (`assets/studio.jpg`, 736px wide) | replace with a licensed/HD version when available |
-| Concepts | Pexels photos 7851906, 33197278, 10810999, 12285892 (Pexels License) | replace with your own concepts/renders |
+| Concepts | linen-tone placeholder until added | `assets/concept-1.jpg` … `concept-4.jpg` |
 
 The three landscape photos currently load from Unsplash's servers (free under the Unsplash License). For speed and reliability, download them (about 2400px wide, JPG, under 500 KB), save them in `assets/` and change each `src` to the local file. The studio and project slots pick up `assets/studio.jpg` and `assets/project-N.jpg` automatically once those files exist.
 
