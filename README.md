@@ -16,7 +16,7 @@ The look comes from the *Sima Soy* concept board: rustic, dramatic, earthy, tran
 | Quote band | Waves on a purple beach, by Yousef Espanioly ([Unsplash](https://unsplash.com/photos/waves-crashing-on-purple-beach-DA_tplYgTow)) | `assets/band.jpg` |
 | Contact | Golden hour rocky coastline, by Kellen Riggin ([Unsplash](https://unsplash.com/photos/golden-hour-illuminates-rocky-coastline-with-crashing-waves-9jTkTV7E51I)) | `assets/sea.jpg` |
 | Studio | Layered rock strata, from the owner's mood board (`assets/studio.jpg`, 736px wide) | replace with a licensed/HD version when available |
-| Projects | linen-tone placeholder | `assets/project-1.jpg` … `project-4.jpg` |
+| Concepts | Pexels photos 7851906, 33197278, 10810999, 12285892 (Pexels License) | replace with your own concepts/renders |
 
 The three landscape photos currently load from Unsplash's servers (free under the Unsplash License). For speed and reliability, download them (about 2400px wide, JPG, under 500 KB), save them in `assets/` and change each `src` to the local file. The studio and project slots pick up `assets/studio.jpg` and `assets/project-N.jpg` automatically once those files exist.
 
@@ -32,7 +32,7 @@ assets/           favicon and (later) your photos
 ## Before launch: to-do
 
 1. **Photos.** Add your interior photos (see *Photos* above) and self-host the landscape photos.
-2. **Projects.** The names in "Recent projects" (Driftwood House, Sea Glass Kitchen, etc.) are placeholders. Replace them with real projects.
+2. **Concepts.** The "Concepts" section shows mood/concept studies (Dusk House, Linen Retreat, …). Swap in your own concepts and, later, real projects.
 3. **Email and Instagram.** The site uses `hello@masiora.studio` (set this up as a mailbox, e.g. via Google Workspace from Squarespace) and `@studiomasiora`. Search `index.html` to change either.
 4. **Contact form.** The form currently opens the visitor's email app (`mailto:`), which is unreliable. To receive enquiries properly, sign up for a free form service such as [Formspree](https://formspree.io) (Cloudflare Pages has no built-in forms), then change the form's `action` to the URL they give you and remove `enctype="text/plain"`.
 5. **Copy.** Read through the text and adjust it to your voice, services and location.
