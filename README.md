@@ -6,7 +6,7 @@ The look comes from the *Sima Soy* concept board: rustic, dramatic, earthy, tran
 
 **Logo:** the brand files are in `assets/logo-*.svg`. The site draws the logo from an inline SVG sprite at the top of `index.html`, so it can be cream over photos and plum on light backgrounds.
 **Fonts:** *Cormorant Garamond* (headings), *DM Sans* (body).
-**Colours** (top of `styles.css`): plum `#542b46` (logo), peach `#f9ada0` (logo sun/moon), mauve `#c6a8b8`, navy `#344151` (text), cream `#faf4ec` (background), sea `#3e6b6a`. Photos get a soft plum-to-peach *dusk* grade (`.dusk`) so they share the evening mood.
+**Colours** (top of `styles.css`): plum `#542b46` (logo), mauve `#c6a8b8`, navy `#344151` (text), cream `#faf4ec` (background), sea `#3e6b6a`. Photos get a soft plum-to-peach *dusk* grade (`.dusk`) so they share the evening mood.
 
 ## Photos
 
