@@ -1,18 +1,19 @@
-# Studio Masiora — website
+# Masiora — Interiors & Experiences
 
-A one-page static website for Studio Masiora, an interior design studio, live at **masiora.studio**. It's plain HTML, CSS and JavaScript, with no build step and no dependencies.
+A one-page static website for Masiora, live at **masiora.studio** (preview: masiora.pages.dev). It's plain HTML, CSS and JavaScript, with no build step and no dependencies.
 
 The look comes from the *Sima Soy* concept board: rustic, dramatic, earthy, tranquil, fresh and organic. Full-bleed photography (Rocky Mountains, misty peaks, sea) with quiet typography and transparent hairline buttons.
 
-**Fonts:** *Cormorant Garamond* (logo in semi-bold, headings in light), *DM Sans* (body).
-**Colours** (top of `styles.css`): shell `#f3f1ec`, linen `#ebe5dc`, beige `#d7c8b7`, taupe `#a99b8c`, mint `#c9e2dd`, mist `#b2b9bd`, dusty rose `#a87374`, deep sea-green `#3d5c58` (logo), charcoal `#332e2f`.
+**Logo:** the brand files are in `assets/logo-*.svg`. The site draws the logo from an inline SVG sprite at the top of `index.html`, so it can be cream over photos and plum on light backgrounds.
+**Fonts:** *Cormorant Garamond* (headings), *DM Sans* (body).
+**Colours** (top of `styles.css`): plum `#542b46` (logo), peach `#f9ada0` (logo sun/moon), mauve `#c6a8b8`, navy `#344151` (text), cream `#faf4ec` (background), sea `#3e6b6a`. Photos get a soft plum-to-peach *dusk* grade (`.dusk`) so they share the evening mood.
 
 ## Photos
 
 | Spot | Currently | File to add |
 |---|---|---|
-| Hero | Moraine Lake, Canadian Rockies, by Kalen Emsley ([Unsplash](https://unsplash.com/photos/snow-covered-mountain-near-lake-during-daytime-LdCpEcMQgQI)) | `assets/hero.jpg` |
-| Quote band | Misty peaks at sunrise, by Julien Riedel ([Unsplash](https://unsplash.com/photos/misty-mountain-peaks-at-sunrise-with-warm-light-sizw4cX8Sds)) | `assets/band.jpg` |
+| Hero | Misty peaks at sunrise, by Julien Riedel ([Unsplash](https://unsplash.com/photos/misty-mountain-peaks-at-sunrise-with-warm-light-sizw4cX8Sds)) | `assets/hero.jpg` |
+| Quote band | Moraine Lake, Canadian Rockies, by Kalen Emsley ([Unsplash](https://unsplash.com/photos/snow-covered-mountain-near-lake-during-daytime-LdCpEcMQgQI)) | `assets/band.jpg` |
 | Contact | Ocean waves with white foam, by Sueda Dilli ([Unsplash](https://unsplash.com/photos/turbulent-ocean-waves-crashing-with-white-foam-njXk57H1-2E)) | `assets/sea.jpg` |
 | Studio | linen-tone placeholder | `assets/studio.jpg` |
 | Projects | linen-tone placeholder | `assets/project-1.jpg` … `project-4.jpg` |
