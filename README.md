@@ -13,9 +13,9 @@ The look comes from the *Sima Soy* concept board: rustic, dramatic, earthy, tran
 | Spot | Currently | File to add |
 |---|---|---|
 | Hero | Misty peaks at sunrise, by Julien Riedel ([Unsplash](https://unsplash.com/photos/misty-mountain-peaks-at-sunrise-with-warm-light-sizw4cX8Sds)) | `assets/hero.jpg` |
-| Quote band | Moraine Lake, Canadian Rockies, by Kalen Emsley ([Unsplash](https://unsplash.com/photos/snow-covered-mountain-near-lake-during-daytime-LdCpEcMQgQI)) | `assets/band.jpg` |
-| Contact | Ocean waves with white foam, by Sueda Dilli ([Unsplash](https://unsplash.com/photos/turbulent-ocean-waves-crashing-with-white-foam-njXk57H1-2E)) | `assets/sea.jpg` |
-| Studio | linen-tone placeholder | `assets/studio.jpg` |
+| Quote band | Waves on a purple beach, by Yousef Espanioly ([Unsplash](https://unsplash.com/photos/waves-crashing-on-purple-beach-DA_tplYgTow)) | `assets/band.jpg` |
+| Contact | Golden hour rocky coastline, by Kellen Riggin ([Unsplash](https://unsplash.com/photos/golden-hour-illuminates-rocky-coastline-with-crashing-waves-9jTkTV7E51I)) | `assets/sea.jpg` |
+| Studio | Layered rock strata, from the owner's mood board (`assets/studio.jpg`, 736px wide) | replace with a licensed/HD version when available |
 | Projects | linen-tone placeholder | `assets/project-1.jpg` … `project-4.jpg` |
 
 The three landscape photos currently load from Unsplash's servers (free under the Unsplash License). For speed and reliability, download them (about 2400px wide, JPG, under 500 KB), save them in `assets/` and change each `src` to the local file. The studio and project slots pick up `assets/studio.jpg` and `assets/project-N.jpg` automatically once those files exist.
